@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <!-- Registration Form -->
+    <form action="#" method="POST">
+        
+        <!-- Full name -->
+        <label for="fullname">Full name:</label>
+        <input 
+            type="text" 
+            id="fullname" 
+            name="fullname" 
+            minlength="3" 
+            maxlength="30" 
+            required 
+            autofocus
+        ><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required
+        ><br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone:</label>
+        <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            pattern="[0-9]{10}" 
+            title="Please enter exactly 10 digits" 
+            required
+        ><br><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input 
+            type="number" 
+            id="age" 
+            name="age" 
+            min="16" 
+            max="49"
+        ><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of birth:</label>
+        <input 
+            type="date" 
+            id="dob" 
+            name="dob" 
+            min="1900-01-01" 
+            max="2026-12-31" 
+            required
+        ><br><br>
+
+        <!-- Course Dropdown -->
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">-- Choose a course --</option>
+            <option value="web-dev">Web Development</option>
+            <option value="data-science">Data Science</option>
+            <option value="cybersecurity">Cybersecurity</option>
+        </select><br><br>
+
+        <!-- Agreement Checkbox -->
+        <label>
+            <input 
+                type="checkbox" 
+                id="agreement" 
+                name="agreement" 
+                required
+            > 
+            I accept the rules
+        </label><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <!-- Inline SVG below the form -->
+    <div>
+        <svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sample shapes">
+        <rect x="10" y="10" width="80" height="60" fill="steelblue" stroke="black" stroke-width="2" />
+        <circle cx="140" cy="40" r="30" fill="tomato" stroke="black" stroke-width="2" />
+        <line x1="10" y1="100" x2="190" y2="100" stroke="green" stroke-width="4" />
+    </svg>
+        </svg>
+    </div>
+
+</body>
+</html>
