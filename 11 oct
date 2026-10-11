@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+
+
+            <Style>
+                   /*page style*/
+               body{
+                    front-family: 
+                    margin: 0; 
+                    background-color: rgb(226, 20, 157);
+                    
+
+                        /*Header style*/
+                    header{
+                        background-color: rgb(106, 226, 162);
+                        padding: 20px;
+                        text-align: center;
+                    }
+                    header h1{
+                        margin: 0;
+                        background-color: rgb(255, 0, 0);
+                        color: darkorange;
+                    }
+
+/ *navigation style*/
+                        nav{
+                          background-color: rgb(51, 0, 255);
+                          overflow: hidden;
+                          padding: 30px;       
+                        }
+                         nav a{
+                              float: left;
+                              display: block;
+                              color: beige;
+                              text-align: center;
+                              padding: 14px;
+                              text-decoration: none;
+                         }
+
+                         /*main area*/
+                         main{
+                            max-width: 800px;
+                            margin: 20px auto;
+                            padding: 20px
+                         }
+
+                         /* section styles */
+        section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            }
+
+            section h2 {
+                        margin-top: 0%;
+                        color: burlywood;
+                     
+            }
+            section p{
+                        line-height: 1.6;
+                        padding-left: 20px;
+            }
+
+
+
+                     /* 6. LIST */
+            ul {
+                line-height: 1.8;
+                padding-left: 20px;
+            }
+
+        li:nth-child(1) { color: #803804; }
+        li:nth-child(2) { color: #034b19; }
+        li:nth-child(3) { color: #0505a4; }
+
+
+/* FOOTER */
+
+                    footer {
+                    background-color: #c8cf0b;
+                    color: #bd0e59;
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 14px;
+                    }
+                
+                    footer p {
+                    margin: 0;
+                    }
+            
+
+
+
+
+            </Style>
+</head>
+<body>
+            <header> AASTHA GUPTA </header>
+            <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+
+<main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>My name is  aastha gupta learning  web developer. 
+                    I enjoy creating websites and learning new technologies.</p>
+            </section>
+
+        
+<section id="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Coding</li>
+                    <li>Cooking</li>
+                    <li>Drawing</li>
+                </ul>
+            </section>
+
+
+            <div class="content-box">
+  <h3> CONTACT </h3>
+   <p> Email: aastha@ <example class="com"></example></p>
+    <button type="Contact Me">Contact me </button>
+  </form>
+</div>
+
+<footer>
+            task done!!!
+</footer>
+
+
+
+
+
+            
+</body>
+</html>
