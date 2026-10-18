@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1 - Flexbox Navbar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+    }
+
+    /* Requirement 1: Dark background & Requirement 4, 5, 6: Flexbox centering and space allocation */
+    .navbar {
+      background-color: #1a1a2e;
+      display: flex; /* Requirement 4 */
+      justify-content: space-between; /* Requirement 5: pushes logo left, links right */
+      align-items: center; /* Requirement 6: centers items vertically */
+      padding: 15px 30px;
+      color: #ffffff;
+    }
+
+    /* Requirement 2: Logo text */
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4e54c8;
+      letter-spacing: 1px;
+    }
+
+    /* Requirement 3: 3 links */
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #4e54c8;
+    }
+
+    /* Bonus: Mobile responsiveness using flex-direction to stack items */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column; /* Stacks logo on top of links */
+        gap: 15px;
+      }
+      
+      .nav-links {
+        flex-direction: row; /* Keep links side-by-side or change to column if needed */
+      }
+    }
+        .stack {
+                position: relative;
+                width: 300px;
+                height: 220px;
+                margin: 40px;
+            }
+            .box {
+                position: absolute;
+                width: 160px;
+                height: 120px;
+                border-radius: 10px;
+                color: white;
+                font-family: sans-serif;
+                transition: z-index 0s, transform 0.2s;
+            }
+
+            .a { background: #09d60c; top:0; left:0 ; z-index: 1; }
+            .b { background: #2196F3; top:10px; left:10px; z-index: 2; }
+            .c { background: #f30420; top:20px; left:20px; z-index: 3; }
+   
+            .box:hover {
+                z-index: 10;
+                transform: scale(1.05);
+            }
+
+  </style>
+</head>
+<body>
+
+  <!-- Requirement 1: navbar container -->
+  <div class="navbar">
+    <!-- Requirement 2: Logo -->
+    <div class="logo">MyLogo</div>
+    
+    <!-- Requirement 3: 3 links -->
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+<div class="stack">
+             <div class="box a">box A (z: 1)</div>
+              <div class="box b">box B (z 2)</div>
+              <div class="box c">box C (z: 3)</div>
+
+  
+   
+
+
+</body>
+</html>
