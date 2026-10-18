@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aastha website</title>
+</head>
+
+<body>
+        <header>
+            <h1>collage vidya </h1>
+          <nav>
+                <ul>
+                    
+                   <li><a href="home.html" class="logo">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="terms & condition.html" class="logo">terms & condition</a></li>
+                </ul>
+            </nav>
+        </header>
+             <h2> Login</h2>
+    </br>
+      </br>
+        </br>
+        <section>
+        <form>
+            <label for=" Student name">Student Name:</label>
+            <input type="text" id="student name" student name="student name" required>
+
+              </br>
+
+            <label for="Student Enrollment No.">Student Enrollment No.:</label>
+            <input type="Student Enrollment No." id=Student Enrollment name="Student Enrollment No." required>
+
+              </br>
+
+            <label for="Department">Department:</label>
+            <textarea id="Department" name="Department" required></textarea>
+
+              </br>
+
+                </br>
+                
+            <button type="submit">Submit</button>
+            
+        </form>
+          </br>
+
+        </section>
+</body>
+
+</html>
+
+<!-- table code -->
+
+    <section>
+        <h1>Table of Students</h1>
+
+        <table border="1">
+            <thead>
+                
+                    <th>Student Name</th>
+                    <th>Student Enrollment No.</th>
+                    <th>Subject</th>
+                    <th> Student Marks</th>
+                
+            </thead>
+            
+<tbody>
+                <!-- row 1-->
+                <tr>
+                    <td>harsh limbachiyaa</td>
+                    <td>26789</td>
+                    <td>Deep Learning</td>
+                    <td>85</td>
+                </tr>
+
+                <!-- row 2--> 
+                <tr>
+                    <td>phool kumari</td>
+                    <td>34567</td>
+                    <td>AI</td>
+                    <td>67</td>
+                </tr>
+                <!-- row 3-->
+                <tr>-
+                  <td>siya yadav</td>
+                  <td> 9870</td>
+                  <td> ML</td>
+                  <td> 89</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+    </section>
+
+    <hr>
+</body>
+<img src="https://images.pexels.com/photos/5530447/pexels-photo-5530447.jpeg" width="300"> 
+
