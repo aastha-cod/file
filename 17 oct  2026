@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Education</title>
+  <style>
+    /* ---------- Basic reset ---------- */
+    * {
+      box-sizing: border-box;   /* width includes padding + border */
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* ---------- Task 1: Navbar ---------- */
+    .navbar {
+      display: flex;                    /* logo and menu side by side */
+      justify-content: space-between;   /* logo left, menu right */
+      align-items: center;              /* vertically centered */
+      padding: 15px 30px;               /* space inside the navbar */
+      background: navy;
+      color: white;
+    }
+
+    .menu {
+      display: flex;                    /* links in a row */
+      list-style: none;                 /* remove bullet points */
+    }
+
+    .menu a {
+      display: block;                   /* so padding works fully */
+      padding: 8px 15px;                /* space around each link */
+      color: white;
+      text-decoration: none;
+    }
+
+    /* ---------- Task 2: Hero Section ---------- */
+    .hero {
+      padding: 80px 20px;               /* large space inside */
+      text-align: center;               /* center the text */
+      background: lightblue;
+    }
+
+    .hero p {
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;            /* lets width/padding/margin work */
+      width: 160px;                     /* its own width */
+      padding: 12px 0;                  /* space inside the button */
+      margin-top: 20px;                 /* gap above the button */
+      background: navy;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* ---------- Task 3: Course Cards ---------- */
+    .courses {
+      display: flex;                    /* cards side by side */
+      padding: 30px;
+    }
+
+    .card {
+      flex: 1;                          /* equal width cards */
+      padding: 20px;                    /* space inside each card */
+      margin: 10px;                     /* space between cards */
+      border: 2px solid navy;           /* border */
+      text-align: center;
+    }
+
+    /* ---------- Task 3: Footer ---------- */
+    .footer {
+      margin-top: 40px;                 /* gap above the footer */
+      padding: 20px;
+      background: #222;                 /* dark background */
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1: Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <h2>Modern Education</h2>
+    </div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Task 2: Hero Section -->
+  <section class="hero">
+    <h1>Unlock Your Potential</h1>
+    <p>Explore our dynamic courses and start your journey today.</p>
+    <a href="#" class="btn">Explore Courses</a>
+  </section>
+
+  <!-- Task 3: Course Cards -->
+  <main class="courses">
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Master modern web design and coding skills.</p>
+      <a href="#" class="btn">View Course</a>
+    </div>
+    <div class="card">
+      <h3>Data Science</h3>
+      <p>Learn data analysis, machine learning, and python.</p>
+      <a href="#" class="btn">View Course</a>
+    </div>
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <p>Grow your brand using social media and SEO strategy.</p>
+      <a href="#" class="btn">View Course</a>
+    </div>
+  </main>
+
+  <!-- Task 3: Footer -->
+  <footer class="footer">
+    <p> &copy; 2026 Modern Education.</p>
+  </footer>
+
+</body>
+</html>
