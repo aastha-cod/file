@@ -6,30 +6,14 @@
     <title>CSS Grid Practice Tasks</title>
 
     <style>
-            .grid-container-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
-  gap: 10px;
-}
-         .grid-container-2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns using repeat() */
-  gap: 10px;
-}
-        .grid-container-3 {
-  display: grid;
-  grid-template-columns: 2fr 1fr; /* First column is twice as wide */
-  gap: 10px;
-  width: 600px; /* For the bonus task scenario */
-} 
-
+           
 /* Optional styling to make the boxes visible */
 .box {
-  background-color: #3498db;
+  background-color: #db3434;
   color: white;
   padding: 20px;
   text-align: center;
-  border-radius: 4px;
+}
            .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -43,7 +27,7 @@
            .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 10px;
+  width: 600px;
 }
     </style>
     
@@ -79,8 +63,6 @@
     <div class="grid-container-task3">
         <div class="box">1</div> (400px)
         <div class="box">2</div> (200px)
-        <div class="box">3</div>
-        <div class="box">4</div>
     </div>
 
     
