@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <style>
+         /*  PROBLEM 1: CSS Variables in :root */
+:root {
+   --main-color-1: #fdec4f;   
+  --main-color-2: #d40b94; 
+  --card-radius: 20px;     
+}
+
+/* Global Reset & Centering */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background: linear-gradient(135deg, var(--main-color-1), var(--main-color-2));
+  overflow: hidden;
+}
+
+/* PROBLEM 2: Glass Card Effect */
+.card {
+  max-width: 400px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(56, 13, 232, 0.25);
+  background: rgba(195, 240, 99, 0.1); 
+  backdrop-filter: blur(12px);
+   border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ce0505;
+  animation: float 3s infinite alternate;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* PROBLEM 3: Keyframe Animation Definition */
+
+@keyframes float {
+from {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);  }
+
+ to{
+    transform: translateY(0px);  
+} 
+}  
+  </style>
+</head>
+<body>
+
+  <!-- Centered Glass Card -->
+  <div class="card">
+    <h2>CSS Challenge</h2>
+    <p>This card demonstrates CSS variables and a smooth infinite floating animation loop.</p>
+  </div>
+
+</body>
+</html>
