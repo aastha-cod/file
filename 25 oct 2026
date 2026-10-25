@@ -55,13 +55,13 @@ body {
 
 @keyframes float {
 from {
-    transform: translateY(0px);
+    transform: translateY(50px);
   }
   50% {
-    transform: translateY(-20px);  }
+    transform: translateY(-50px);  }
 
  to{
-    transform: translateY(0px);  
+    transform: translateX(5px);  
 } 
 }  
   </style>
