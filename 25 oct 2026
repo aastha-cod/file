@@ -32,11 +32,11 @@ body {
   max-width: 400px;
   padding: 2.5rem;
   text-align: center;
-  box-shadow: 0 8px 32px 0 rgba(56, 13, 232, 0.25);
-  background: rgba(195, 240, 99, 0.1); 
+  box-shadow: 0 8px 32px 0 rgba(246, 152, 94, 0.944);
+  background: rgba(223, 204, 81, 0.978); 
   backdrop-filter: blur(12px);
-   border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #ce0505;
+   border: 1px solid rgba(31, 16, 252, 0.929);
+  color: #f4f5f2f5;
   animation: float 3s infinite alternate;
 }
 
@@ -56,9 +56,12 @@ body {
 @keyframes float {
 from {
     transform: translateX(0px);
+    background: #fb9e46;
   }
+
  to{
-    transform: translateX(100px);  
+    transform: translateX(200px);
+    background: hsl(325, 91%, 50%);  
 } 
 }  
   </style>
