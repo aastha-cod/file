@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+           /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #1c11ed;
+    padding-bottom: 50px;
+}
+
+/* Header Styles */
+header {
+    background-color: #103cec;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+/* Main Section Heading */
+main h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #f2820b;
+}
+
+/* Task 3: CSS Grid Layout (Two-column layout) */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* Setting up perspective context for child 3D rotations */
+    perspective: 1000px; 
+}
+
+/* Task 2: CSS Box Model & Styling */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    /* Smooth transition for hover effects */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.product-card .buy-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.product-card .buy-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Task 4: CSS Transforms (Combined 2D and 3D effects on hover) */
+.product-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+   transform:scale(1.05) translateY(-5px) rotateY(10deg);
+}
+
+/* Task 5: CSS Animations and Keyframes (Offer Badge) */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #041434;
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    z-index: 10;
+    
+    /* Applying the animation */
+    animation: myanimation 4s 3
+}
+
+@keyframes pulseBadge {
+    0% {
+        transform: scale(1);
+        background-color: #4447ef;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #26dc32;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #ef4444;
+    }
+}
+
+/* Responsive design bonus hint: collapses to 1 column on small screens */
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+   </style>
+</head>
+<body>
+
+    <header>
+        <h1>GadgetWorld</h1>
+    </header>
+
+    <main>
+        <h2>Our Products</h2>
+        
+        <div class="gallery-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="badge">Special Offer</div>
+                <img src="https://images.pexels.com/photos/5269699/pexels-photo-5269699.jpeg"
+                <h3>Wireless Headphones</h3>
+                <p class="price">Rs.30000</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/32452826/pexels-photo-32452826.jpeg"
+                <h3>Minimalist Watch</h3>
+                <p class="price">Rs.90000</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/19012033/pexels-photo-19012033.jpeg"
+                <h3>Gaming Mouse</h3>
+                <p class="price">Rs.700</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://pixabay.com/images/download/x-854530_1920.jpg"
+                <h3>Mechanical Keyboard</h3>
+                <p class="price">Rs.7480</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
