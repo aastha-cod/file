@@ -92,7 +92,7 @@ main h2 {
 }
 
 .product-card .buy-btn:hover {
-    background-color: #1d4ed8;
+   background-color: #68d81d;
 }
 
 /* Task 4: CSS Transforms (Combined 2D and 3D effects on hover) */
