@@ -172,7 +172,7 @@ main h2 {
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/19012033/pexels-photo-19012033.jpeg"
                 <h3>Gaming Mouse</h3>
-                <p class="price">Rs.700</p>
+                <p class="price">Rs.7000</p>
                 <button class="buy-btn">Buy Now</button>
             </div>
 
