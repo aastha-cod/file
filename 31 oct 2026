@@ -99,6 +99,18 @@ main h2 {
 .product-card:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
    transform:scale(1.05) translateY(-5px) rotateY(10deg);
+.rotateX {
+                transform: perspective(400px) rotateX(45deg);
+            }
+
+            .rotateY {
+                transform: perspective(400px) rotateY(45deg);
+            }
+
+            .rotateZ {
+                transform: perspective(400px) rotateZ(45deg);
+            }
+
 }
 
 /* Task 5: CSS Animations and Keyframes (Offer Badge) */
