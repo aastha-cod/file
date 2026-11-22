@@ -1,0 +1,46 @@
+// 1. Function to add two numbers
+function addNumbers(a: number, b: number): number {
+  return a + b;
+}
+
+// 2. Function to check whether a number is even or odd
+function checkEvenOrOdd(num: number): string {
+  return num % 2 === 0 ? "Number is Even" : "Number is Odd";
+}
+
+// (From Expected Output) Function to calculate area of a rectangle
+function calculateRectangleArea(length: number, width: number): number {
+  return length * width;
+}
+
+// 3. Function to calculate simple interest
+function calculateSimpleInterest(principal: number, rate: number, time: number): number {
+  return (principal * rate * time) / 100;
+}
+
+// 4. Function to greet a user with a default name
+function greetUser(name: string = "Student"): string {
+  return `Hello ${name}`;
+}
+
+// (From Expected Output) Function for Employee Salary
+function getEmployeeSalary(salary: number): number {
+  return salary;
+}
+
+// 5. Arrow function to find the largest of two numbers
+const findLargest = (a: number, b: number): number => {
+  return a > b ? a : b;
+};
+
+// --- Calling the functions to match Expected Output ---
+console.log(`Addition: ${addNumbers(10, 20)}`);
+console.log(checkEvenOrOdd(4));
+console.log(`Area of Rectangle: ${calculateRectangleArea(20, 10)}`);
+console.log(`Simple Interest: ${calculateSimpleInterest(5000, 5, 2)}`);
+console.log(greetUser());
+console.log(`Employee Salary: ${getEmployeeSalary(35000)}`);
+console.log(`Largest Number: ${findLargest(45, 80)}`);
+
+
+
